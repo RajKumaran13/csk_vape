@@ -13,46 +13,99 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
+    <style>
+        body{
+            background-color: black;
+        }
+        nav{
+            background-color: #6dd47e; /*#ffd55a;*/
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        header{
+        
+        background-color: #6dd47e;
+    }
+    footer{
+        background-color: #6dd47e;
+    }
+    .custom-primary-btn {
+            background-color: black; /* Change this to your desired primary button color */
+            border-color: black;
+            color: #ffd55a; /* Change this to your desired primary button outline color */
+        }
+
+        .custom-primary-btn:hover {
+            background-color: #ffd55a; /* Change this to your desired primary button hover color */
+            border-color: #ffd55a;
+            color: #6dd47e; /* Change this to your desired primary button hover outline color */
+        }
+
+        .custom-outline-btn {
+            color: #3498db; /* Change this to your desired outline button color */
+            border-color: #3498db; /* Change this to your desired outline button outline color */
+        }
+
+        .custom-outline-btn:hover {
+            color: #2980b9; /* Change this to your desired outline button hover color */
+            border-color: #2980b9; /* Change this to your desired outline button hover outline color */
+        }
+        section {
+            background-color: #ffd55a;
+        }
+        .card{
+            background-color: #6dd47e;
+        }
+
+        
+        
+       
+    </style>
     <body>
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg ">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#!">CSK VAPE</a>
+                <a class="navbar-brand" href="#!"><b>CSK VAPE</b></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#home">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Pricing" >PRODUCTS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#footer" >CONTACT US</a></li>
+                       <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">SHOP</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="#!">Vape Products</a></li>
                                 <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="#">Reusable</a></li>
-                                <li><a class="dropdown-item" href="disposable.html">Disposable</a></li>
+                                <li><a class="dropdown-item" href="#">PODS</a></li>
+                                <li><a class="dropdown-item" href="disposable.html">DISPOSABLE</a></li>
                             </ul>
-                        </li>
+                        </li>-->
                     </ul>
                     <form class="d-flex">
                         <a class="btn btn-outline-dark" href="https://api.whatsapp.com/send?phone=9080892010">
                             <img src="./assets/whatsapp.png" alt="WhatsApp" style="width: 30px; height: 30px;">
-                            WhatsApp
+                            <b>WhatsApp</b>
                         </a>
                     </form>
                 </div>
             </div>
         </nav>
         <!-- Header-->
-        <header class="bg-dark py-5">
+        <header class="py-5" id="home">
             <div class="container px-5">
                 <div class="row gx-5 justify-content-center">
                     <div class="col-lg-6">
                         <div class="text-center my-5">
-                            <h1 class="display-5 fw-bolder text-white mb-2">Enjoy the presence feel</h1>
-                            <p class="lead text-white-50 mb-4">The product is available within 2 categories you can buy it hrough clicking the contact icon.</p>
+                            <h1 class="display-5 fw-bolder text-black mb-2">STOP SMOKING AND START VAPING</h1>
+                            <p class="lead text-black-50 mb-4"><b>Choose your wisely and enjoy vaping</b></p>
                             <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
-                                <a class="btn btn-primary btn-lg px-4 me-sm-3" href="disposable.html">Disposable</a>
-                                <a class="btn btn-outline-light btn-lg px-4" href="#!">Reusable</a>
+                                <a class="btn custom-primary-btn btn-lg px-4 me-sm-3" href="disposable.html">DISPOSABLE</a>
+                                <a class="btn btn-outline-dark btn-lg px-4" href="pods.html">PODS</a>
                             </div>
                         </div>
                     </div>
@@ -62,7 +115,7 @@
         
         
         <!-- Pricing section-->
-        <section class="bg-light py-5 border-bottom" id="Pricing">
+        <section class="py-5 border-bottom" id="Pricing">
             <div class="container px-5 my-5">
                 <div class="text-center mb-5">
                     <h2 class="fw-bolder">Products</h2>
@@ -77,37 +130,37 @@
                             <div class="card-body p-5">
                                 <div class="small text-uppercase fw-bold">
                                     <i class="bi bi-star-fill text-warning"></i>
-                                    REUSABLE
+                                    PODS
                                 </div>
                                 <div class="mb-3">
-                                    <span class="display-4 fw-bold">1000</span>
+                                    <span class="display-4 fw-bold">1000 </span>
                                     <span class="text-muted">/ per vape</span>
                                 </div>
                                 <ul class="list-unstyled mb-4">
                                     <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        <strong>25 puff</strong>
+                                        <i class="bi bi-check text"></i>
+                                        <strong>Change flavours as you like</strong>
                                     </li>
                                     <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        Not Rechargable
+                                        <i class="bi bi-check text"></i>
+                                        No need to buy as a whole
                                     </li>
                                     <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        1 Time use
+                                        <i class="bi bi-check text"></i>
+                                        Buying pods is enuf
                                     </li>
                                     <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        Add on Flavours
+                                        <i class="bi bi-check text"></i>
+                                        Rechargable
                                     </li>
                                     
                                     <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        No Varities
+                                        <i class="bi bi-check text"></i>
+                                        NO need to buy body for second time.
                                     </li>
                                     
                                 </ul>
-                                <div class="d-grid"><a class="btn btn-primary" href="#!">Choose Yours</a></div>
+                                <div class="d-grid"><a class="btn custom-primary-btn" href="/pods.html">Choose Yours</a></div>
                             </div>
                         </div>
                     </div>
@@ -125,29 +178,29 @@
                                 </div>
                                 <ul class="list-unstyled mb-4">
                                     <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        <strong>25 puff</strong>
+                                        <i class="bi bi-check text"></i>
+                                        <strong>Use and Throw type</strong>
                                     </li>
                                     <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        Not Rechargable
+                                        <i class="bi bi-check text"></i>
+                                        Rechargable
                                     </li>
                                     <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        1 Time use
+                                        <i class="bi bi-check text"></i>
+                                        C- Type charger is enough
                                     </li>
                                     <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        Add on Flavours
+                                        <i class="bi bi-check text"></i>
+                                        Flavours varies depends upon puffs bought
                                     </li>
                                     
                                     <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        No Varities
+                                        <i class="bi bi-check text"></i>
+                                        600-13000 puffs
                                     </li>
                                     
                                 </ul>
-                                <div class="d-grid"><a class="btn btn-primary" href="#!">Choose Yours</a></div>
+                                <div class="d-grid"><a class="btn custom-primary-btn" href="/disposable.html">Choose Yours</a></div>
                             </div>
                         </div>
                     </div>
@@ -158,7 +211,7 @@
         </section>
         
         <!-- Footer-->
-        <footer class="py-5 bg-dark">
+        <footer class="py-5" id="footer">
             <div class="container px-5"><p class="m-0 text-center text-white"></p></div>
         </footer>
         <!-- Bootstrap core JS-->
@@ -166,5 +219,24 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                // Smooth scrolling for anchor links
+                $('a[href^="#"]').on('click', function (event) {
+                    event.preventDefault();
+        
+                    var target = this.hash;
+                    var $target = $(target);
+        
+                    $('html, body').stop().animate({
+                        'scrollTop': $target.offset().top
+                    }, 800, 'swing', function () {
+                        window.location.hash = target;
+                    });
+                });
+            });
+        </script>
     </body>
 </html>
